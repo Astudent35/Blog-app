@@ -1,12 +1,11 @@
-var mysql = require('mysql2');
+import mysql from "mysql"
 
-var db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root123',
-  database: 'blog'
-});
- 
+export const db = mysql.createConnection({
+  host:"localhost",
+  user:"root",
+  password: "root123",
+  database:"blog"
+})
 
 db.connect(function(err) {
   if (err) {
@@ -16,7 +15,3 @@ db.connect(function(err) {
 
   console.log('connected as id ' + db.threadId);
 });
-
-module.exports = {
-  db
-}

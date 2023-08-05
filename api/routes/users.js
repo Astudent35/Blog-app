@@ -1,6 +1,7 @@
-const express = require('express')
-//const {addPost} = require('../controllers/user.js')
-const router = express.Router();
+import express from "express"
 
+const router = express.Router()
 
-module.exports = router;
+//TODO
+
+export default router
